@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: algorithmProbs.AlgorithmProbsTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec <<< FAILURE!
+algorithmProbs.AlgorithmProbsTest.testSingleNumber_RepeatedMoreThanTwice()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problems: 
+	Cannot cast from Object to int
+	Cannot cast from Object to int
+	at algorithmProbs.AlgorithmProbs.singleNumber(AlgorithmProbs.java:100)
+	at algorithmProbs.AlgorithmProbsTest.testSingleNumber_RepeatedMoreThanTwice(AlgorithmProbsTest.java:50)
+algorithmProbs.AlgorithmProbsTest.testSingleNumber_NotRepeated()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problems: 
+	Cannot cast from Object to int
+	Cannot cast from Object to int
+	at algorithmProbs.AlgorithmProbs.singleNumber(AlgorithmProbs.java:100)
+	at algorithmProbs.AlgorithmProbsTest.testSingleNumber_NotRepeated(AlgorithmProbsTest.java:60)
+algorithmProbs.AlgorithmProbsTest.testFindAnagrams()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.Error: Unresolved compilation problems: 
+	'<>' operator is not allowed for source level below 1.7
+	'<>' operator is not allowed for source level below 1.7
+	at algorithmProbs.AlgorithmProbs.findAnagrams(AlgorithmProbs.java:152)
+	at algorithmProbs.AlgorithmProbsTest.testFindAnagrams(AlgorithmProbsTest.java:96)

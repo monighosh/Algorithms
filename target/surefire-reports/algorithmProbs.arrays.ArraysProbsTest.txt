@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: algorithmProbs.arrays.ArraysProbsTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+algorithmProbs.arrays.ArraysProbsTest.testIsOneBitCharacter_oneBit()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at algorithmProbs.arrays.ArraysProbsTest.testIsOneBitCharacter_oneBit(ArraysProbsTest.java:23)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 19 more
+algorithmProbs.arrays.ArraysProbsTest.testIsOneBitCharacter_twoBits()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at algorithmProbs.arrays.ArraysProbsTest.testIsOneBitCharacter_twoBits(ArraysProbsTest.java:31)
+algorithmProbs.arrays.ArraysProbsTest.testMaximumProduct()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at algorithmProbs.arrays.ArraysProbsTest.testMaximumProduct(ArraysProbsTest.java:57)
+algorithmProbs.arrays.ArraysProbsTest.testFindMaxAverage()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at algorithmProbs.arrays.ArraysProbsTest.testFindMaxAverage(ArraysProbsTest.java:67)
+algorithmProbs.arrays.ArraysProbsTest.testCanPlaceFlowers()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at algorithmProbs.arrays.ArraysProbsTest.testCanPlaceFlowers(ArraysProbsTest.java:77)
+algorithmProbs.arrays.ArraysProbsTest.testArrayPairSum()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at algorithmProbs.arrays.ArraysProbsTest.testArrayPairSum(ArraysProbsTest.java:98)
+algorithmProbs.arrays.ArraysProbsTest.testPivotIndex()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at algorithmProbs.arrays.ArraysProbsTest.testPivotIndex(ArraysProbsTest.java:107)
+algorithmProbs.arrays.ArraysProbsTest.testCheckPossibility()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at algorithmProbs.arrays.ArraysProbsTest.testCheckPossibility(ArraysProbsTest.java:122)
+algorithmProbs.arrays.ArraysProbsTest.testFindPairs()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at algorithmProbs.arrays.ArraysProbsTest.testFindPairs(ArraysProbsTest.java:133)
+algorithmProbs.arrays.ArraysProbsTest.testFindShortestSubArray()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at algorithmProbs.arrays.ArraysProbsTest.testFindShortestSubArray(ArraysProbsTest.java:144)
