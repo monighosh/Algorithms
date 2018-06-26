@@ -1,7 +1,5 @@
 package ik.recursion;
 
-import java.util.Collections;
-import java.util.PriorityQueue;
 
 public class RecursionProbs {
 	
@@ -29,48 +27,70 @@ public class RecursionProbs {
 		
 	}
 	
-	private String swap(char[] c, int i, int j){
+	private String swap(char[] c, int i, int j) {
 		char temp = c[i];
 		c[i] = c[j];
 		c[j] = temp;
-		
+
 		return new String(c);
 	}
 	
-	
-	public void printSubSets(String s){
-		
+	public void printSubSets(String s){		
+		char[] sub_so_far = new char[s.length()];
+		printSubsetsHelper(s.toCharArray(), sub_so_far, 0, 0);
 		
 	}
 	
 	private void printSubsetsHelper(char[] s, char[] sub_so_far, int i, int j){
+		if(i == s.length){
+			printSubsets(sub_so_far , j);
+			return;
+		}			
 		
 		
 		printSubsetsHelper(s, sub_so_far, i+1, j);
-		sub_so_far[i] = s[i];
+		sub_so_far[j] = s[i];
 		printSubsetsHelper(s, sub_so_far, i+1, j+1);
+		
+		return;
+	}
+
+	private void printSubsets(char[] sub_so_far, int j) {
+		for(char c: sub_so_far){
+			if((int)c !=0)
+				System.out.print(c);
+			System.out.print(" ");
+				
+		}
+			
 		
 	}
 	
-//	public int[] maxSlidingWindow(int[] nums, int k) {
-//	    if (nums == null || nums.length == 0 || k <= 0 || k > nums.length) {
-//	      return new int[0];
-//	    }
-//
-//	    int[] result = new int[nums.length - k + 1];
-//	    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(k, Collections.reverseOrder());
-//	    for (int i = 0; i < nums.length; ++i) {
-//	      maxHeap.add(nums[i]);
-//	      if (i >= k - 1) {
-//	        result[i - k + 1] = maxHeap.peek();
-//	        maxHeap.remove(nums[i - k + 1]);
-//	      }
-//	    }
-//
-//	    return result;
-//	  }
 	
+	/**
+	 * Given an array arr of size n and a target sum k. 
+	You have to determine, whether there exists a group of numbers (numbers need not to be contiguous and group can not be empty) in arr such that their sum equals to k.
+
+	Input Format: There are two argument. First one is arr and second one is k.
+	Output Format: Return a boolean denoting your answer
+	 */
 	
+	public boolean checkIfSumK(int[] a, int k){
+		int sum_so_far = 0;
+		return checkIfSumKHelper( a,  k, sum_so_far, 0, false);
+		
+	}
 	
+	private boolean checkIfSumKHelper(int[] a, int k, int sum_so_far, int i, boolean oneIncluded){
+		
+		if(sum_so_far == k && oneIncluded) {
+			return true;		}
+		
+		if(i == a.length)
+			return false;		
+		
+		return (checkIfSumKHelper(a, k , sum_so_far, i+1, oneIncluded)) || (checkIfSumKHelper(a, k , sum_so_far +a[i], i+1, true));	
+		
+	}	
 
 }
